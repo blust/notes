@@ -1,4 +1,3 @@
-[TOC]
 
 # channel
 
@@ -505,8 +504,7 @@ import (
 func process(i int, wg *sync.WaitGroup) {  
     fmt.Println("started Goroutine ", i)
     time.Sleep(2 * time.Second)
-    fmt.Printf("Goroutine %d ended
-", i)
+    fmt.Printf("Goroutine %d ended", i)
     wg.Done()
 }
 
